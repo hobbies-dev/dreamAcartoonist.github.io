@@ -1,0 +1,14 @@
+.clear-fix:after{
+    content:"";
+    clear:both;
+    display:block;
+
+    width:0;
+    height:0;
+    overflow: hidden;
+    visibility: hidden;
+}
+/*适应IE浏览器*/
+.clear-fix {
+    zoom: 1;
+}

@@ -1,0 +1,573 @@
+*{margin:0;padding:0;}
+/*body{font-size:12px;}*/
+ul {
+    list-style-type: none;
+}
+/*头部样式*/
+.header { /*width:100%;*/
+    height: 42px;
+    background: #333;
+}/*此处用了加高法清除浮动*/
+.header .top-bar {
+    width: 1226px; /*border:1px solid red*/;
+    margin: 0 auto; /*overflow: hidden;*/
+}
+/*.header ul {overflow: hidden;}*/
+/*浮动*/
+.header .top-bar1, .top-bar1 li, .top-bar2 li {
+    float: left;
+}
+.header .top-bar2 {
+    float: right;
+}
+
+/*.header li {height:42px;}*/
+.header li a {
+    color: #b0b0b0;
+    width: 48px;
+    line-height: 42px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 13px;
+}
+
+.header li a:hover {
+    color: #fff;
+}
+
+.header li span {
+    color: #b0b0b0;
+    opacity: .1;
+}
+
+.header li.last { /*font-size:15px;*/
+    background: #424242;
+    margin-left: 15px;
+}
+
+.header li.last img {
+    margin-bottom: -15px;
+}
+
+/*内容导航样式*/
+.nav {
+    width: 1226px;
+    height: 100px;
+    margin: 20px auto 0;
+}
+
+/*浮动*/
+.nav .logo, .menu {
+    float: left;
+}
+
+.nav .search {
+    float: right;
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid #e0e0e0
+}
+
+.nav .menu li {
+    float: left;
+    height: 88px;
+    padding: 0 10px;
+}
+
+.nav .logo {
+    height: 55px;
+    margin-top: 20px;
+}
+
+/*此处应该还有一段清除img标签下面白边的代码*/
+.nav .menu {
+    height: 100px;
+    margin-left: 195px;
+}
+
+.nav .menu li a {
+    color: #000;
+    line-height: 88px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav .menu li a:hover {
+    color: #ff6700
+}
+
+.nav .search input {
+    width: 235px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 7px;
+}
+
+.nav .search button {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #fff;
+    border-left: 1px solid #e0e0e0
+}
+
+/*内容轮播图样式*/
+.carousel {
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*此处调整了上面导航的li的高度，解决了图片左上角跟盒子的左上角不对齐的问题*/
+.car-menu {
+    width: 234px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+}
+
+.car-menu ul {
+    margin: 20px 0 20px;
+}
+
+.car-menu li {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+}
+
+.car-menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+/*或者用rgba*/
+.car-menu li a:hover {
+    text-decoration: none;
+}
+
+.car-menu li:hover {
+    background: #ff6700;
+}
+
+.arr:after {
+    float: right;
+    content: '>';
+    color: #fff;
+    margin-right: 25px;
+}
+
+/*热门推荐*/
+.hot {
+    width: 1226px;
+    margin: 15px auto;
+}
+
+.hot div {
+    float: left;
+    margin-right: 14px;
+}
+
+.hot .item1 {
+    width: 224px;
+    height: 160px;
+    background: #665e57;
+    padding: 5px; /*border-box:padding-box;*/
+}
+
+.hot .item2 {
+    width: 316px;
+}
+
+.hot div.last {
+    margin-right: 0;
+}
+
+.hot .item1 li {
+    float: left;
+    width: 59px;
+    height: 60px;
+    margin: 10px 5px 0 0;
+    padding: 5px;
+    /*border:1px solid #b0b0b0;*/
+    text-align: center;
+}
+
+.hot .item1 li a {
+    color: #f1f1f1;
+    font-size: 13px;
+}
+
+.hot .item1 li a:hover {
+    text-decoration: none;
+}
+
+/*.hot item1 .bdn-top{border-top:none;}
+.hot item1 .bdn-left{border-left:none;}
+.hot item1 .bdn-bottom{border-bottom:none;}*/
+
+/*明星单品样式*/
+.star-shop {
+    width: 1226px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.star-shop h2 {
+    font-size: 22px;
+    font-weight: 300;
+    height: 58px;
+}
+
+.star-shop .btn {
+    float: right;
+    border: 1px solid #f1f1f1;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.star-shop li {
+    float: left;
+    width: 35px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #b0b0b0;
+}
+
+.star-shop .btn-left {
+    border: 1px solid #f1f1f1;
+    width: 34px;
+}
+
+.star-shop .star-shopper li {
+    float: left;
+    width: 230px;
+    height: 300px;
+    padding-top: 39px;
+    margin-right: 14px;
+    box-sizing: padding-box;
+    background: #fafafa;
+    border-top: 1px solid #ffac13;
+}
+
+.star-shop .star-shopper li img {
+    width: 160px;
+    height: 160px;
+}
+
+.star-shop .star-shopper h3 a {
+    font-size: 14px;
+    color: #212121;
+}
+
+.star-shop .star-shopper li .desc {
+    font-size: 12px;
+}
+
+.star-shop .star-shopper li .price {
+    font-size: 13px;
+    color: #ff6709;
+}
+
+/*顶部边框换颜色*/
+.star-shop .star-shopper li.star2 {
+    border-top-color: #83c44e;
+}
+
+.star-shop .star-shopper li.star3 {
+    border-top-color: #2196f3;
+}
+
+.star-shop .star-shopper li.star4 {
+    border-top-color: #e53935;
+}
+
+.star-shop .star-shopper li.star5 {
+    border-top-color: #00c0a5;
+}
+
+/*家电*/
+.mainShopper {
+    background: #f5f5f5;
+    padding-top: 60px;
+}
+
+.house-ele {
+    width: 1226px;
+    margin: 20px auto 22px;
+    position: relative;
+}
+
+.house-ele h2 {
+    font-size: 22px;
+    font-weight: 400;
+    height: 58px;
+    line-height: 58px;
+    color: #333;
+}
+
+.house-ele .house-nav {
+    float: right;
+    width: 280px;
+    padding: 16px 0 0;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.house-ele .house-nav li {
+    float: left;
+    color: #333;
+    width: 32px;
+    height: 26px;
+    margin-left: 30px;
+}
+
+.house-ele .house-nav li.second {
+    width: 64px;
+}
+
+.house-ele .house-nav li a {
+    font-size: 16px;
+    color: #333
+}
+
+.house-ele .house-nav .active a {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+/*右边整体*/
+.house-ele .bigJ, .house-ele-list, .house-ele-list li {
+    float: left;
+}
+
+.house-ele .house-ele-list {
+    width: 992px;
+    height: 641px;
+}
+
+.house-ele .house-ele-list li {
+    width: 234px;
+    height: 246px;
+    text-align: center;
+    padding: 34px 0 20px;
+    margin: 0 0 14px 14px;
+    background: #ffffff;
+}
+
+.house-ele .flag-saleoff1, .flag-saleoff2, .flag-new {
+    width: 64px;
+    height: 20px;
+    z-index: 2;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #f00;
+    position: absolute;
+    top: 58px;
+    left: 330px;
+}
+
+.house-ele .flag-saleoff2 {
+    top: 58px;
+    left: 580px
+}
+
+.house-ele .flag-new {
+    top: 373px;
+    left: 830px;
+    background-color: #83c44e
+}
+
+.house-ele .house-ele-list li img {
+    width: 150px;
+    height: 150px;
+}
+
+.house-ele .house-ele-list li h3 {
+    width: 214px;
+    height: 21px;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.house-ele .house-ele-list li .desc {
+    font-size: 12px;
+    height: 18px;
+    margin: 0 10px 10px;
+    color: #b0b0b0;
+}
+
+.house-ele .house-ele-list li .price {
+    color: #ff6700;
+    font-size: 14px;
+}
+
+.house-ele .house-ele-list li del {
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+/*服务*/
+.serve {
+    width: 1226px;
+    height: 25px;
+    margin: 0 auto;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.serve li {
+    float: left;
+    width: 243px;
+    text-align: center;
+    line-height: 25px;
+    border-right: 1px solid #e0e0e0;
+}
+
+.serve li.last {
+    border-right: 0;
+}
+
+.serve li a {
+    color: #616161;
+    font-size: 16px;
+}
+
+/*服务帮助*/
+.serve-help {
+    width: 1226px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: left
+}
+
+.serve-help .serve-help-links, .serve-help-links dl {
+    float: left;
+}
+
+.serve-help .phone {
+    float: right;
+}
+
+.serve-help .serve-help-links dl {
+    width: 160px;
+}
+
+.serve-help-links dl dt {
+    height: 17px;
+    margin: -1px 0 26px;
+    line-height: 17px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.serve-help-links dl dd {
+    height: 18px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.serve-help-links dl dd a {
+    color: #757575;
+}
+
+.serve-help-links dl dd a:hover {
+    color: #ff6700;
+}
+
+.serve-help .phone {
+    width: 251px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+}
+
+.serve-help .phone h2 {
+    margin: 0 0 5px;
+    font-size: 22px;
+    color: #ff6700;
+}
+
+.serve-help .phone p {
+    margin: 0 0 16px;
+    font-size: 12px;
+    color: #616161;
+}
+
+.serve-help .phone a {
+    display: inline-block;
+    font-size: 12px;
+    color: #ff6700;
+    border: 1px solid #ff6700
+}
+
+/*底部*/
+.footer {
+    background: #fafafa;
+    font-size: 12px;
+    padding: 30px 0;
+}
+
+.footer .contain {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.footer .logo, .info, .info-links {
+    float: left;
+}
+
+.footer .info-links {
+    float: right;
+}
+
+.footer .logo {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.footer .info p {
+    height: 18px;
+    line-height: 18px;
+    color: #b0b0b0;
+}
+
+.footer .info p a {
+    color: #b0b0b0;
+}
+
+.footer .info p a:hover {
+    color: #ff6700;
+}
+
+.footer .info-links {
+    width: 436px;
+    height: 28px;
+    margin: 4px 0 0;
+}
+
+.footer .info-links img {
+    width: 83px;
+}
+
+.footer .xiaomi {
+    width: 267px;
+    height: 19px;
+    margin: 30px auto 0;
+    font-size: 18px;
+    color: #888
+}
