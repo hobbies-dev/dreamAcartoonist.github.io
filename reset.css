@@ -15,8 +15,9 @@ html ul, html ol {
   list-style: none; }
 html a {
   text-decoration: none; }
+/*此处小米项目的hover状态不需要underline*/
 html a:hover {
-  text-decoration: underline; }
+  text-decoration: none; }
 html sup {
   vertical-align: text-top; }
 html sub {
